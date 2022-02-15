@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "comment": "너무 좋아요!",
+    "score": 4.2,
+    "user_id": "hehe12",
+    "created_at": "2022.02.15",
+    "accomodation_id": "BNBN215"
+  },
+  {
+    "id": 1,
+    "comment": "너무 좋아요!",
+    "score": 3.3,
+    "user_id": "hehe12",
+    "created_at": "2022.02.15",
+    "accomodation_id": "BNBN215"
+  },
+  {
+    "id": 1,
+    "comment": "너무 좋아요!",
+    "score": 4.8,
+    "user_id": "hehe12",
+    "created_at": "2022.02.15",
+    "accomodation_id": "BNBN215"
+  }
+]

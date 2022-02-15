@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "마눌펜션",
+    "description": "애월! 넓은 잔디마당과 돌담~제주스러운 깨끗한 펜션",
+    "region": "해변",
+    "price": "1,000,000",
+    "is_verified": true,
+    "latitude": 33.450741,
+    "longitude": 126.335804,
+    "check_in_time": "4:00AM",
+    "check_out_time": "11:00AM"
+  },
+  {
+    "id":2,
+    "name": "마눌펜션",
+    "description": "애월! 넓은 잔디마당과 돌담~제주스러운 깨끗한 펜션",
+    "region": "해변",
+    "price": "1,000,000",
+    "is_verified": true,
+    "latitude": 33.450741,
+    "longitude": 126.335804,
+    "check_in_time": "4:00AM",
+    "check_out_time": "11:00AM"
+  },
+  {
+    "id": 3,
+    "name": "마눌펜션",
+    "description": "애월! 넓은 잔디마당과 돌담~제주스러운 깨끗한 펜션",
+    "region": "해변",
+    "price": "1,000,000",
+    "is_verified": true,
+    "latitude": 33.450741,
+    "longitude": 126.335804,
+    "check_in_time": "4:00AM",
+    "check_out_time": "11:00AM"
+  }
+]
