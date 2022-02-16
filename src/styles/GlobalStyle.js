@@ -5,8 +5,10 @@ const GlobalStyle = createGlobalStyle`
   
   * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  }
+
+  body {
+    font-family: 'SF Pro Display', sans-serif
   }
 
 `;

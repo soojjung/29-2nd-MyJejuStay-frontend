@@ -4,63 +4,59 @@ import DetailPageMapButton from './DetailPageMapButton';
 import styled from 'styled-components';
 
 const DetailPageHeader = () => {
-  const [accomodationData, setAccomodationData] = useState([]);
+  const [accommodationData, setAccommodationData] = useState([]);
   const [reviewData, setReviewData] = useState([]);
   useEffect(() => {
-    fetch(
-      'http://localhost:3000/data/DetailPage/DetailPageHeader/DetailPage_Accomodations_Data.json'
-    )
+    fetch('data/DetailPage/DetailPageHeader/DetailPage_Accomodations_Data.json')
       .then(res => res.json())
       .then(res => {
-        setAccomodationData(res);
+        setAccommodationData(res);
       });
   }, []);
 
   useEffect(() => {
-    fetch(
-      'http://localhost:3000/data/DetailPage/DetailPageHeader/DetailPage_Reviews_Data.json'
-    )
+    fetch('data/DetailPage/DetailPageHeader/DetailPage_Reviews_Data.json')
       .then(res => res.json())
       .then(res => setReviewData(res));
   }, []);
 
   return (
     <div>
-      <StyledAccomodationSection>
-        <StyledAccomodationHeader>
-          <StyledAccomodationName>
-            {accomodationData[0]?.name}
-          </StyledAccomodationName>
+      <StyledAccommodationSection>
+        <StyledAccommodationHeader>
+          <StyledAccommodationName>
+            {accommodationData[0]?.name}
+          </StyledAccommodationName>
           <DetailPageMapButton />
-        </StyledAccomodationHeader>
-        <StyledAccomodationDesc>
-          {accomodationData[0]?.description}
-        </StyledAccomodationDesc>
+        </StyledAccommodationHeader>
+        <StyledAccommodationDesc>
+          {accommodationData[0]?.description}
+        </StyledAccommodationDesc>
         <DetailPageRating score={reviewData[0]?.score} />
-      </StyledAccomodationSection>
+      </StyledAccommodationSection>
     </div>
   );
 };
 
 export default DetailPageHeader;
 
-const StyledAccomodationSection = styled.section`
+const StyledAccommodationSection = styled.section`
   width: 700px;
 `;
 
-const StyledAccomodationHeader = styled.div`
+const StyledAccommodationHeader = styled.div`
   display: flex;
   justify-content: space-between;
   height: 40px;
   margin-bottom: 10px;
 `;
 
-const StyledAccomodationName = styled.h1`
+const StyledAccommodationName = styled.h1`
   font-size: 32px;
   font-weight: bold;
 `;
 
-const StyledAccomodationDesc = styled.h3`
+const StyledAccommodationDesc = styled.h3`
   color: #848c94;
   margin-bottom: 10px;
   font-size: 14px;
