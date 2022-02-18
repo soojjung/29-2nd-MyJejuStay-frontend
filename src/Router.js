@@ -6,6 +6,8 @@ import ProductList from './pages/ProductList/ProductList';
 import DetailPageHeader from './pages/DetailPage/DetailPageHeader/DetailPageHeader';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './components/Footer/Footer';
+import App from './pages/KaKao/App';
+import Auth from './pages/KaKao/Auth';
 
 const Router = () => {
   return (
@@ -16,6 +18,8 @@ const Router = () => {
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/detail" element={<DetailPageHeader />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/app" element={<App />} />
+        <Route path="/oauth/kakao/callback" element={<Auth />} />
       </Routes>
       <Footer />
     </BrowserRouter>
