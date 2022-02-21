@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const DetailPageInfoCheckInOut = ({ title, accomodationData }) => {
+const DetailPageInfoCheckInOut = ({ title, accommodationData }) => {
   return (
     <div>
       <h3>{title}</h3>
-      <StyledCheckInOut>{accomodationData}</StyledCheckInOut>
+      <StyledCheckInOut>{accommodationData}</StyledCheckInOut>
     </div>
   );
 };

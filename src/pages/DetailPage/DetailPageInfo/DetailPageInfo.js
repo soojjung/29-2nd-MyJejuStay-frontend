@@ -4,13 +4,13 @@ import DetailPageInfoCheckInOut from './DetailPageInfoCheckInOut';
 import { api } from '../../../api/config';
 
 const DetailPageInfo = () => {
-  const [accomodationData, setAccomodationData] = useState([]);
+  const [accommodationData, setAccommodationData] = useState([]);
 
   useEffect(() => {
     fetch(`${api.fetchAccommodationItem}/1`)
       .then(res => res.json())
       .then(res => {
-        setAccomodationData(res);
+        setAccommodationData(res);
       });
   }, []);
 
@@ -23,14 +23,14 @@ const DetailPageInfo = () => {
             key={id}
             title={title}
             accomodationData={
-              accomodationData && accomodationData.message[0][label]
+              accommodationData && accommodationData.message[0][label]
             }
           />
         ))}
       </StyledCheckWrapper>
       <div>
         <StyledIntro>숙소 소개</StyledIntro>
-        <p>{accomodationData.message[0]?.detail_description}</p>
+        <p>{accommodationData.message[0]?.detail_description}</p>
       </div>
     </div>
   );
