@@ -28,17 +28,17 @@ const Main = () => {
         <MainHeader>당신의 쉼은 어디에 있나요?</MainHeader>
         <MainContetsBox>
           <MainItem>
-            <MainLink to="/Productlist?themaGroup='해변'">
+            <MainLink to="/Productlist?themaGroup=해변">
               <MainLinkTitle>Ocean</MainLinkTitle>
             </MainLink>
           </MainItem>
           <MainItem>
-            <MainLink to="/Productlist?themaGroup='숲'">
+            <MainLink to="/Productlist?themaGroup=숲">
               <MainLinkTitle>Forest</MainLinkTitle>
             </MainLink>
           </MainItem>
           <MainItem>
-            <MainLink to="/Productlist?themaGroup='도심'">
+            <MainLink to="/Productlist?themaGroup=도심">
               <MainLinkTitle>City</MainLinkTitle>
             </MainLink>
           </MainItem>
@@ -54,6 +54,7 @@ const MainSection = styled.section`
 `;
 
 const MainVideo = styled.video`
+  margin-top: 60px;
   width: 100%;
   height: 100%;
 `;
