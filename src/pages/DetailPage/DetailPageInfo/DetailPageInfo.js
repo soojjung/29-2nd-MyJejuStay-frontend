@@ -10,18 +10,15 @@ const DetailPageInfo = () => {
     fetch(`${api.fetchAccommodationItem}/1`)
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         setAccomodationData(res);
       });
   }, []);
-
-  console.log(accomodationData);
 
   return (
     <div>
       <StyledAccomodationInfoTitle>숙소정보</StyledAccomodationInfoTitle>
       <StyledCheckWrapper>
-        {ACCOMODATION_DATA_TITLE.map(({ id, title, label }) => (
+        {ACCOMMODATION_DATA_TITLE.map(({ id, title, label }) => (
           <DetailPageInfoCheckInOut
             key={id}
             title={title}
@@ -53,7 +50,7 @@ const StyledIntro = styled.h3`
   margin: 20px 0;
 `;
 
-const ACCOMODATION_DATA_TITLE = [
+const ACCOMMODATION_DATA_TITLE = [
   {
     id: 1,
     title: '체크인',
