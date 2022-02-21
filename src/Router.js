@@ -10,6 +10,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/detail" element={<DetailPageHeader />} />
+        <Route path="/accommodations/:id" element={<DetailPageInfo />} />
       </Routes>
     </BrowserRouter>
   );

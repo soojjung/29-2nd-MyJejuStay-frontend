@@ -7,7 +7,9 @@ const DetailPageHeader = () => {
   const [accommodationData, setAccommodationData] = useState([]);
   const [reviewData, setReviewData] = useState([]);
   useEffect(() => {
-    fetch('data/DetailPage/DetailPageHeader/DetailPage_Accomodations_Data.json')
+    fetch(
+      'data/DetailPage/DetailPageHeader/DetailPage_Accommodations_Data.json'
+    )
       .then(res => res.json())
       .then(res => {
         setAccommodationData(res);
